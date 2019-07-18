@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>Pink</title>
-  <link rel="stylesheet" href="source/css/style.css">
+  <title>Pink // главная страница</title>
+  <link rel="stylesheet" href=css/style.css">
 </head>
 
-<body>
+<body class="body">
 
 <!-- Шапка документа
 ========================================================================== -->
 <header class="page-header">
-    <img class="page-header__logo-img" src="ihttp://placehold.it" width="74" height="25" alt="Pink»">
+  <div class="page-header__inner">
+    <!-- Панель с логотипом и меню -->
+    <section class="page-panel">
+    <img class="page-panel__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink»">
     <nav class="main-nav  show-main-nav main-nav--closed main-nav--opened main-nav--js">
 <!-- Кнопка в виде бургера -->
-        <button class="main-nav__toggle" type="button">
+        <button class="burger" type="button">
           <span> Открыть меню </span>
         </button>
 <!-- Выпадающее меню -->
@@ -35,20 +38,24 @@
           </ul>
         </div>
       </nav>
+  </section>
+    <section class="module">
+      <img class="module__img" src="img/iphone-hand-mobile@1x.png" width="262" height="290" alt="iphone-hand">
+    </section>
 <!-- Запуск приложения -->
-    <div class="info-modules">
-      <div class="info-modules__container">
+    <div class="info-module">
+      <div class="info-module__container">
         <div class="start-application">
           <a class="btn start-application__btn start-application__btn--change" href="http://www.apple.com/ru/itunes/download/">Скачать приложение</a>
           <ul class="start-application__list">
             <li class="start-application__item">
-              <a href="http://www.apple.com/ru"><img src="img/logo-apple.svg"></a>
+              <a class="main-nav__link href="https://www.apple.com/ru/"><img src="img/logo-apple.svg"></a>
             </li>
             <li class="start-application__item">
-              <a href="https://www.android.com/ru"><img src="img/logo-android.svg"></a>
+              <a class="main-nav__link href="https://www.android.com/ru"><img src="img/logo-android.svg"></a>
             </li>
             <li class="start-application__item">
-              <a href="https://www.microsoft.com/ru-ru"><img src="img/logo-microsoft.svg"></a>
+              <a class="main-nav__link href="https://www.microsoft.com/ru-ru"><img src="img/logo-microsoft.svg"></a>
             </li>
           </ul>
           <div class="start-application__text">
@@ -57,6 +64,7 @@
         </div>
       </div>
     </div>
+  </div>
   </header>
 
 <!--

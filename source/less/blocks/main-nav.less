@@ -1,0 +1,44 @@
+.main-nav {
+  min-width: 320px;
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+// первый уровень
+
+&__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 32px;
+  list-style: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+&__item {
+  position: relative;
+}
+
+&__link {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  background-color: #283645;
+  color: #ffffff;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+&:hover,
+&:focus {
+  text-decoration: none;
+  color: #d22856;
+}
+
