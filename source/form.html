@@ -21,9 +21,15 @@
     <div class="main-nav__dropdown">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTMLAcademy</a></li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTMLAcademy</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -158,7 +164,9 @@
           <h2 class="form-order__title">Опишите свои эмоции</h2>
 
           <div class="form-order__item-textarea">
-            <textarea name="additions" id="order" cols="auto" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <label for="order"></label>
+            <textarea cols="auto" id="order" name="additions" placeholder="Можно прям в красках, не стесняясь в выражениях"
+                                                 rows="7"></textarea>
           </div>
 
         </div>
@@ -183,17 +191,16 @@
       <div class="page-footer__logo">
         <picture>
           <a class="page-footer__logo-link" href="index.html">
-            <img src="img/logo-pink-blue-mobile.svg" width="146.3px" height="40.375px" alt="Pink">
+            <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Pink">
           </a>
         </picture>
       </div>
 
-      <div class="page-footer__social">
+      <section class="social-button">
 
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--change"
-               href="https://twitter.com/htmlacademy_ru">
+        <ul class="social-button__list">
+          <li class="social-button__item">
+            <a class="social-button__link social-button__link--change" href="shttp://twitter.com/htmlacademy_ru">
 
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -208,12 +215,10 @@
                   c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
                 </g>
               </svg>
-
             </a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--change"
-               href="https://facebook.com/htmlacademy/">
+          <li class="social-button__item">
+            <a class="social-button__link social-button__link--change" href="shttp://facebook.com/htmlacademy/">
 
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"
                    x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" fill="#d22856"
@@ -225,10 +230,9 @@
 
             </a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link page-footer__social-link--change"
-               href="https://www.youtube.com/user/htmlacademy_ru">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <li class="social-button__item">
+            <a class="social-button__link social-button__link--change" href="https://www.youtube.com/user/htmlacademy_ru">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" fill="#d22856"
                    enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                 <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932
@@ -238,14 +242,14 @@
           </li>
         </ul>
 
-      </div>
+      </section>
 
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">Разработано</span>
+      <div class="copyright-symbol">
+        <span class="copyright-symbol__text">Разработано</span>
         <picture>
-          <a class="page-footer__copyright-link page-footer__copyright-link--change" href="https://htmlacademy.ru/">
+          <a class="copyright-symbol__link copyright-symbol__link--change" href="https://htmlacademy.ru/">
 
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  fill="#d22856" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
                  enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z
