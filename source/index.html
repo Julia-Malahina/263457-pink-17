@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink // главная страница</title>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="body">
-
+<body>
 <!-- Шапка документа
 ========================================================================== -->
 <header class="page-header">
   <div class="page-header__inner">
     <!-- Панель с логотипом и меню -->
     <section class="page-panel">
-    <img class="page-panel__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink»">
-      <!-- Меню -->
-    <nav class="main-nav  show-main-nav main-nav--closed main-nav--opened main-nav--js">
-      <!-- Кнопка в виде бургера -->
+      <img class="page-panel__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink»">
+
+      <nav class="main-nav  show-main-nav main-nav--closed main-nav--opened main-nav--js">
+        <!-- Кнопка в виде бургера -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden"> Открыть меню </span>
         </button>
-      <!-- Выпадающее меню -->
+        <!-- Выпадающее меню -->
         <div class="main-nav__dropdown">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -39,11 +38,11 @@
           </ul>
         </div>
       </nav>
-  </section>
-   <section class="module">
-     <!-- <img class="module__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone-hand">-->
     </section>
-<!-- Запуск приложения -->
+    <section class="module">
+      <img class="module__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone-hand">
+    </section>
+    <!-- Запуск приложения -->
     <div class="info-module">
       <div class="info-module__container">
         <div class="start-application">
@@ -65,13 +64,13 @@
             </li>
           </ul>
           <div class="start-application__text">
-            <p class="start-application__text-promo">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            <p>Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </header>
+</header>
 
 <!--
 /** Тело документа
@@ -89,11 +88,13 @@
     <div class="our-features__inner">
       <div class="our-features__item">
         <h2 class="our-features__title">Поднимает настроение</h2>
-        <p class="our-features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <p class="our-features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+          кликов!</p>
       </div>
       <div class="our-features__item">
         <h2 class="our-features__title">Меняет мир вокруг</h2>
-        <p class="our-features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <p class="our-features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+          эффект</p>
       </div>
       <div class="our-features__item">
         <h2 class="our-features__title">Заводит новых друзей</h2>
