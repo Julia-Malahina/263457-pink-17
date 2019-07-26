@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink // главная страница</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,11 @@
   <div class="page-header__inner">
     <!-- Панель с логотипом и меню -->
     <section class="page-panel">
-      <img class="page-panel__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink»">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-panel__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink»">
+      </picture>
 
       <nav class="main-nav  show-main-nav main-nav--closed main-nav--opened main-nav--js">
         <!-- Кнопка в виде бургера -->
@@ -22,7 +27,7 @@
         </button>
         <!-- Выпадающее меню -->
         <div class="main-nav__dropdown">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="#">Главная</a>
             </li>
@@ -39,14 +44,21 @@
         </div>
       </nav>
     </section>
-    <section class="module">
-      <img class="module__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone-hand">
-    </section>
-    <!-- Запуск приложения -->
-    <div class="info-module">
+  </div>
+
+  <section class="module">
+    <div class="module__banner">
+      <p class="module__banner-text">Взгляните на жизнь иначе!</p>
+    </div>
+    <img class="module__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone-hand">
+  </section>
+  <!-- Запуск приложения -->
+  <div class="info-module">
+    <div class="page-header__inner">
       <div class="info-module__container">
         <div class="start-application">
-          <a class="btn start-application__btn start-application__btn--change" href="http://www.apple.com/ru/itunes/download/">Скачать приложение</a>
+          <a class="btn start-application__btn start-application__btn--change"
+             href="http://www.apple.com/ru/itunes/download/">Скачать приложение</a>
           <ul class="start-application__list">
             <li class="start-application__item">
               <a class="main-nav__link" href="https://www.apple.com/ru/">
@@ -64,7 +76,8 @@
             </li>
           </ul>
           <div class="start-application__text">
-            <p>Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            <p class="start-application__text-promo">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X,
+              Windows 8</p>
           </div>
         </div>
       </div>
@@ -102,7 +115,8 @@
       </div>
     </div>
     <div class="our-features__img">
-      <img class="our-features__img-iphone" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Iphone»">
+      <img class="our-features__img-iphone" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+           alt="Iphone»">
     </div>
   </section>
 </main>

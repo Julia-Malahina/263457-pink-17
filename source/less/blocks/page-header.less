@@ -1,16 +1,25 @@
 .page-header {
-  margin-bottom: 45px;
   display: flex;
   flex-direction: column;
-  background-color: #283645;
-  background-repeat: no-repeat;
-  background-position: 0;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .page-header__inner {
-  display: block;
-  //*width: 100%;*//
-  //*margin: 0 auto;*//
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-panel__logo-img {
+    width: 150px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-panel__logo-img {
+    height: 648px;
+  }
 }
