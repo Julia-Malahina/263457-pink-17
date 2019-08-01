@@ -1,31 +1,41 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 30px;
-
-  /*background-image: url("../img/bg-back-mobile@1x.jpg");
- background-color: #1e2732;
- background-repeat: no-repeat;
- background-position: 50% 50%;
- background-size: 720px auto;*/
-}
-
-.page-header__inner {
-  padding-left: 20px;
-  padding-right: 20px;
+  border: solid #00ee00;
+  margin-bottom: 55px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #1e2732;
+  background-repeat: no-repeat;
+  background-position: 0% 65%;
+  //background-size: 320px auto;
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    margin-bottom: px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-color: #1e2732;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    //background-size: 150%;
+  }
+
   .page-panel__logo-img {
     width: 150px;
-    height: 45px;
+    height: 40px;
   }
 }
 
 @media (min-width: 1200px) {
+  .page-header {
+    margin-bottom: 55px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: #1e2732;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    //background-size: 1200px auto;
+  }
+
   .page-panel__logo-img {
-    height: 648px;
+    width: 150px;
+    height: 40px;
   }
 }

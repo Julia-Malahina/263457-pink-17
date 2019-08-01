@@ -1,20 +1,25 @@
 .start-application {
+  border: solid #00ee00;
   width: 320px;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .start-application__list {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 155px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav__link {
+.start-application__link {
   width: 46px;
   height: 57px;
   display: flex;
@@ -22,14 +27,45 @@
   justify-content: space-between;
 }
 
+//noinspection Stylelint
+.start-application__item:nth-child(2){
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .start-application__text {
   display: flex;
   margin: 0;
   padding-left: 25px;
   padding-right: 25px;
+  text-align: center;
 }
 
 .start-application__text-promo {
   color: white;
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .start-application {
+    width: 320px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .start-application {
+    width: 320px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
 }

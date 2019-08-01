@@ -1,4 +1,5 @@
 .information {
+  border: solid #00ee00;
   margin: 0;
   display: flex;
 }
@@ -6,11 +7,59 @@
 &__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 &__item {
+  font-size: 24px;
+  text-align: center;
+  color: #283645;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  padding-right: 60px;
-  padding-left: 60px;
-  text-transform: uppercase;
+&__inner {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .information {
+    border: solid #00ee00;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__item {
+    font-size: 40px;
+    text-align: center;
+    color: #283645;
+  }
+}
+
+@media (min-width: 1200px) {
+  .information {
+    border: solid #00ee00;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__item {
+    font-size: 40px;
+    text-align: center;
+    color: #283645;
+  }
 }
